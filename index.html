@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB Web Interface</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>MongoDB Web Interface</h1>
+
+    <div class="container">
+        <div>
+            <h2>Query Database</h2>
+            <form id="queryForm">
+                <label for="queryField">Field:</label>
+                <input type="text" id="queryField" name="queryField"><br><br>
+
+                <label for="queryValue">Value:</label>
+                <input type="text" id="queryValue" name="queryValue"><br><br>
+                <label for="queryId">Or Id:</label>
+                <input type="text" id="queryId" name="queryId"><br><br>
+
+                <button type="submit">Query</button>
+            </form>
+        </div>
+
+        <div>
+            <h2>Add Data</h2>
+            <form id="addForm">
+                <label for="addField">Field:</label>
+                <input type="text" id="addField" name="addField"><br><br>
+
+                <label for="addValue">Value:</label>
+                <input type="text" id="addValue" name="addValue"><br><br>
+
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <div>
+          <h2>Check Connection</h2>
+          <button id="checkConnection">Check Connection</button>
+          <p id="connectionStatus"></p>
+        </div>
+    </div>
+
+    <h2>Results</h2>
+    <pre id="results"></pre>
+
+    <script src="/script.js"></script>
+</body>
+</html>
