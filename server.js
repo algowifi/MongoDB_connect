@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 // Connection URL and Database Name
-const url = 'mongodb://mongodb:27017'; // Assuming MongoDB is running locally
+const url = 'mongodb://locahost:27017'; // Assuming MongoDB is running locally
 const dbName = 'sconto_matto'; // Replace with your database name
 const collectionName = 'utenti'
 
